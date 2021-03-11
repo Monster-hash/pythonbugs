@@ -73,7 +73,7 @@ class LianJiaSpider():
     # 启动爬虫程序
     def start(self):
 
-        for i in range(1, 101): # 产生一个1到10的之间的整数序列
+        for i in range(1, 101): # 产生一个1到100的之间的整数序列
             full_url = self.url.format(i)
             # print(full_url)
             resp = self.send_request(full_url) # 发送请求，获取一个响应
